@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="head1">COUNTER</h1>
+    <h2 id="count">0</h2>
+
+    <button class="btn" type="button" id="value-2">DECREASE 2-</button>
+    <button class="btn" type="button" id="decrease">DECREASE</button>
+    <button class="btn1" type="button" id="increase">INCREASE</button>
+    <button class="btn1" type="button" id="value2">INCREASE 2+</button>
+
+    <script>
+
+
+
+        var count = 0;
+
+        document.querySelector("#increase").addEventListener("click", () => {
+            changeCount(1);
+        });
+
+        document.querySelector("#decrease").addEventListener("click", () => {
+            changeCount(-1);
+        });
+
+        document.querySelector("#value2").addEventListener("click", () => {
+            changeCount(2);
+        });
+
+        document.querySelector("#value-2").addEventListener("click", () => {
+            changeCount(-2);
+        });
+
+
+        changeCount = (number) => {
+            count += number;
+            document.querySelector("#count").textContent = count;
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: rgb(5, 47, 110);
+}
+
+#count{
+    font-size: 7rem;
+    color: yellow;
+}
+
+.btn{
+    border: 3px solid black;
+    font-size: 18px;
+    border-radius: 0px 10px 0px 10px;
+    font-weight: bold;
+    background-color: rgb(212, 191, 96);
+}
+
+.btn1{
+    border: 3px solid black;
+    font-size: 18px;
+    border-radius: 10px 0px 10px 0px;
+    font-weight: bold;
+    background-color: rgb(212, 191, 96);
+}
+
+.btn:hover{
+    background-color: rgb(73, 73, 73);
+}
+
+.btn1:hover{
+    background-color: rgb(75, 74, 74);
+}
+#head1{
+    font-size: 50px;
+    color: darkorange;
+    text-decoration: underline;
+}
